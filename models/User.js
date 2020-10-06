@@ -35,4 +35,4 @@ tokenExp: { // 유효성 검사기한
 //밑에는 모델로 감싸주는부분
 const User = mongoose.model('User',userSchema)
 
-module.exports={} //외부에서도 쓸수있게 하는것.
+module.exports={User} //외부에서도 쓸수있게 하는것.
