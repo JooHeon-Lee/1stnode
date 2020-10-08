@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import { useDispatch} from 'react-redux'
 import { loginUser } from '../../../_actions/user_action';
+import { withRouter} from 'react-router-dom';
+
 function LoginPage(props) {
     const dispatch = useDispatch();
 //여긴 state를 만들어서 내부의 벨류를 변경시켜야함 이메일과 패스워드의 state 만들기
@@ -57,4 +59,4 @@ dispatch(loginUser(body))
     )
 }
 
-export default LoginPage
+export default withRouter(LoginPage)
