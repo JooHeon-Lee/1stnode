@@ -10,8 +10,11 @@ useEffect(() => {
 }, [])
 
     return (
-        <div>
-            LandingPage 랜딩 페이지
+        <div style={{
+            display : 'flex',justifyContent:'center',alignItems : 'center',
+            width: '100%', height:'100vh' 
+        }}>
+            <h2>Start !</h2>
         </div>
     )
 }
